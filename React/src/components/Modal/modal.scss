@@ -1,0 +1,64 @@
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modal-title {
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0px;
+  font-weight: 700;
+}
+
+.modal-body {
+  display: flex;
+  width: 100%;
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-close-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modal-submit-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-submit-btn button {
+  border: none;
+  border-radius: 5px;
+  background: #0a1172;
+  font-size: 25px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 10px;
+}

@@ -1,0 +1,14 @@
+.todo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .todo-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
