@@ -2,6 +2,10 @@
 
 In the project directory, you can run:
 
+## Before stact express app, install all its dependencies
+
+### `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\
