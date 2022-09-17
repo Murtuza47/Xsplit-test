@@ -17,7 +17,7 @@ router.get("/get-todo-items", async (req, res, next) => {
 router.post("/create-todo-item", isCreateRouteValid, async (req, res, next) => {
   try {
     const { body } = req
-    Todo.customCreate(body.name).then(() => {
+    Todo.customCreate(body.name, body.description).then(() => {
       res.status(200).json({ message: "Added" })
     })
   } catch (error: any) {

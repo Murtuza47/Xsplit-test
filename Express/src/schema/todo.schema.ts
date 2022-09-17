@@ -6,6 +6,7 @@ import { ITodoModel } from "../interface/ITodoModel.interface";
 const todoSchema = new Schema<ITodo>({
   _id: String,
   name: String,
+  description: String,
   createdAt: Date,
   status: {
     type: String,
@@ -13,10 +14,11 @@ const todoSchema = new Schema<ITodo>({
   }
 });
 
-todoSchema.statics.customCreate = async function (name: string) {
+todoSchema.statics.customCreate = async function (name: string, description?: string) {
   const createdTodoItem: ITodo = await this.create({
     _id: uuidv4(),
     name,
+    description,
     status: 'incomplete',
     createdAt: new Date()
   });
